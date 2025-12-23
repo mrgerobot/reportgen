@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  reportgen:
+    image: reportgen
+    volumes:
+      - ./outputs:/app/outputs
+      - ./data:/app/data
+    command: python main.py
